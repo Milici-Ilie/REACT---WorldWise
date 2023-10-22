@@ -1,0 +1,20 @@
+/* 🎨🎨[CSS MODULES STYLE]🎨🎨CSS MODULES, we definetly need to import those files ".css" in our ".jsx" files to bound them and the classe/styles will be than available only  on those ".jsx" files where we imported the files🎨🎨[CSS MODULES STYLE]🎨🎨 */
+.nav {
+  background-color: orangered;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav :global(.active) {
+  background-color: blue;
+}
+/* 🎨🎨[CSS MODULES STYLE]🎨🎨 the "active" class is a class that add auttomatically to the selected links, so this is how we style those classes, using the ":global" method */
+
+:global(.test) {
+  background-color: red;
+}
+/* 🎨🎨[CSS MODULES STYLE]🎨🎨 this is how we declare a class to bo global, available in all the code*/
